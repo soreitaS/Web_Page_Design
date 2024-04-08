@@ -1,0 +1,171 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image:url(bg1.webp);
+    background-size:cover;
+}
+
+a{
+    color:black;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+/*header start*/
+
+header{
+    height:100px;
+    border-bottom:2px solid;
+    border-bottom-color:rgb(29, 40, 42);
+}
+
+header nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:100%;
+}
+
+header nav .logo a{
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+    font-size:20px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    column-gap:30px;
+}
+
+nav ul li a{
+    color:black;
+    text-decoration:none;
+}
+
+nav ul li a:hover{
+    color:rgb(0, 215, 213);
+    transition:color .25s ease;
+}
+
+nav .menu{
+    display:flex;
+    align-items:center;
+    column-gap:48px;
+}
+
+nav .menu .menu-button{
+    color:black;
+    text-decoration:none;
+    background-color:rgb(249, 162, 162);
+    padding:12px 24px;
+    border-radius:56px;
+    transition:all .25s ease;
+}
+
+nav .menu .menu-button:hover{
+    background-color: black;
+    color: rgb(249, 162, 162)
+    }
+
+/*header end*/
+
+/*section start*/
+
+.content{
+    color:black;
+    height: calc(100vh-100px);
+    padding-top:150px;
+}
+
+.content h1{
+    font-size:60px;
+    text-align:center;
+}
+
+.content p{
+    font-size:24px;
+    text-align:center;  
+    margin-top:32px;
+}
+
+.content .links{
+    display:flex;
+    justify-content:center;
+    margin-top:48px;
+    column-gap:16px;
+}
+
+.content .links a{
+    background-color:rgb(134, 134, 134);
+    padding:20px;
+    width:280px;
+    text-align:center;
+    font-size:18px;
+    text-decoration:none;
+    border-radius:56px;
+    transition:all .25s ease-in;
+    
+}
+
+.content .links a:hover{
+    background-color:black;
+    color:white;
+}
+
+/*section end*/
+
+/*responsive start*/
+
+@media(max-width:576px){
+    .container{
+        width:100%;
+        padding-left:12px;
+        padding-right:12px;
+    }
+
+    .menu ul{
+        column-gap:20px;
+    }
+
+    .menu .menu-button{
+        display:none;
+    }
+
+    .content{
+        padding-top:50px;
+    }
+
+    .content h1{
+        font-size:36px;
+    }
+
+    .content p{
+        font-size:16px;
+    }
+
+    .content .links{
+        flex-direction:column;
+        align-items:center;
+        row-gap:1rem;
+    }
+
+    .content .links a{
+        padding:14px;
+        width:90%;
+    }
+}
+
+/*responsive end*/
+
